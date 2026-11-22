@@ -11,9 +11,9 @@ export class Product {
   @Column()
   category: string;
 
-  @Column('decimal', { precision: 10, scale: 2 })
+  @Column('double precision')
   price: number;
 
-  @Column()
+  @Column('integer')
   quantity: number;
 }
